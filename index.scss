@@ -1,26 +1,31 @@
 /*!
- * Gaia theme v4.0.0-alpha.6
+ * Gaia theme v4.0.0-beta.1
  * Homepage: https://pingendo.com
  * Copyright 2014-2017 Pingendo
  * Licensed under MIT
  * Based on Bootstrap
 */
 
+@import url('https://fonts.googleapis.com/css?family=Cabin'); 
+@import url('https://fonts.googleapis.com/css?family=Neuton'); 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             #336699;
 
 
 
+$theme-colors: (
+  primary: #336699,
+  secondary: #595959,
+  success: #5cb85c,
+  info: #333,
+  warning: #f0ad4e,
+  danger: #d9534f,
+  light: #f8f9fa,
+  dark: #292b2c
+);
 
 
-$brand-success:             #5cb85c;
-$brand-info:                #333;
-$brand-warning:             #f0ad4e;
-$brand-danger:              #d9534f;
-$brand-inverse:             #292b2c;
- 
 
 // Options
 //
@@ -49,7 +54,11 @@ $link-color: #336699;
 
 
 $font-family-base: Lato;
-$headings-font-family: Lato;
+$headings-font-family: Cabin;
+
+
+
+
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-h1: 2.5 * $font-size-base;
@@ -72,9 +81,23 @@ html,body {
   scroll-behavior: smooth;
 
 }$body-bg: white;
-@import 'bootstrap-4.0.0-alpha.6';
+@import 'bootstrap-4.0.0-beta.1';
 
 .navbar {
 border-bottom: solid black 1px;
   background-color: white;
+    border-bottom: 3px solid #454545;
+
+}
+
+
+.main-heading-hero {
+background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+
+
+.header-label {
+background: rgba(0, 0, 0, 0.6);
 }
